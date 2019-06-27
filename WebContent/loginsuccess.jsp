@@ -15,7 +15,7 @@
 		LoginDao loginDao = new LoginDao();
 		boolean status = loginDao.validate(login);
 		if (status) {
-			out.print("<h1>You hava logined successfully</h1>");
+			out.print("<h1>You have logined successfully</h1>");
 		}
 	%>
 </body>
