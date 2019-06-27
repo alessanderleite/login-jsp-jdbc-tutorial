@@ -16,7 +16,7 @@ public class LoginDao {
 		Class.forName("com.mysql.jdbc.Driver");
 		
 		try (Connection connection = DriverManager
-				.getConnection("jdbc:mysql://localhost:3306/users_database?useSSL=false","root","root");
+				.getConnection("jdbc:mysql://localhost:3306/users_database?useTimezone=true&serverTimezone=UTC","root","root");
 			
 				PreparedStatement preparedStatement = connection
 						.prepareStatement("select * from login where username = ? and password = ?")) {
